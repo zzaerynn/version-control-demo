@@ -1,20 +1,13 @@
-import React from "react"
 import './App.css';
+import "./components/HelloMessage";
+import HelloMessage from "./components/HelloMessage";
 
-class HelloMessage extends React.Component {
-    render() {
-        return (
-            <div>
-                Hello {this.props.name}
-            </div>
-        );
-    }
-}
 
 function App() {
   return (
     <div className="App">
         <HelloMessage name="Everyone" />
+        <HelloMessage name="There" />
     </div>
   );
 }

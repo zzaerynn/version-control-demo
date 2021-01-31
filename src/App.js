@@ -3,6 +3,7 @@ import {Route, Redirect, Switch} from 'react-router-dom';
 import HelloMessage from "./components/HelloMessage";
 import FunctionPage from "./components/FunctionPage";
 import ClassPage from "./components/ClassPage";
+import FormExample from "./components/FormExample";
 
 const NoMatch = ({location}) => (
     <div>
@@ -22,6 +23,7 @@ function App() {
         <Switch>
             <Route path='/functions' component={FunctionPage}/>
             <Route path='/classes' component={ClassPage}/>
+            <Route path='/form' component={FormExample}/>
             <Route exact path='/' render={() => (
                 <Redirect
                     to='/functions'

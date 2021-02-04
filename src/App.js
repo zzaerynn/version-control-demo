@@ -4,6 +4,7 @@ import HelloMessage from "./components/HelloMessage";
 import FunctionPage from "./components/FunctionPage";
 import ClassPage from "./components/ClassPage";
 import FormExample from "./components/FormExample";
+import ShowList from "./components/ShowList";
 
 const NoMatch = ({location}) => (
     <div>
@@ -21,6 +22,7 @@ function App() {
         <HelloMessage name="There" />
         <br />
         <Switch>
+            <Route path='/shows' component={ShowList}/>
             <Route path='/functions' component={FunctionPage}/>
             <Route path='/classes' component={ClassPage}/>
             <Route path='/form' component={FormExample}/>

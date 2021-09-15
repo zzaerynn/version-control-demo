@@ -10,6 +10,7 @@ const NoMatch = ({location}) => (
     <div>
         <strong>Error!</strong> No route found matching:
         <div>
+            <p> new change made by hyerin choi</p>
             <code>{location.pathname}</code>
         </div>
     </div>
